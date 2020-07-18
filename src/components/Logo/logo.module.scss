@@ -1,0 +1,12 @@
+.logo {
+    display: inline-flex;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
