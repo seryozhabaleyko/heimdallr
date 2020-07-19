@@ -24,7 +24,11 @@ export const fetchPostsFailure = (errorName, errorMessage) => ({
     payload: { name: errorName, message: errorMessage },
 });
 
-export const fetchPosts = () => async (dispatch) => {
+export const fetchPosts = () => ({
+    type: FETCH_POSTS_REQUEST,
+});
+
+/* export const fetchPosts = () => async (dispatch) => {
     dispatch(fetchPostsRequest());
 
     try {
@@ -34,4 +38,4 @@ export const fetchPosts = () => async (dispatch) => {
     } catch (error) {
         dispatch(fetchPostsFailure(error.name, error.message));
     }
-};
+}; */
