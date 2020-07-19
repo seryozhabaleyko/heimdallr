@@ -1,0 +1,20 @@
+.nav {
+    display: inline-flex;
+    align-items: center;
+    grid-area: nav;
+}
+
+.item {
+    display: inline-flex;
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.link {
+    display: block;
+
+    color: #fff;
+}
