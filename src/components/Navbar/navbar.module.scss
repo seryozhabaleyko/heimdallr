@@ -5,3 +5,9 @@
     background-color: #ab47bc;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: 'logo lol nav';
+}
