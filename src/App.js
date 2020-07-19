@@ -15,12 +15,7 @@ function App() {
                     <div style={{ height: '50px' }} />
                     <PostForm />
                     <div style={{ height: '50px' }} />
-                    <Posts
-                        posts={[
-                            { id: 1, title: 'Title here. № 1' },
-                            { id: 2, title: 'Title here. № 2' },
-                        ]}
-                    />
+                    <Posts />
                     <div style={{ height: '2px', backgroundColor: '#ccc', margin: '50px 0' }} />
                     <FetchedPosts posts={[]} />
                     <div style={{ height: '50px' }} />
