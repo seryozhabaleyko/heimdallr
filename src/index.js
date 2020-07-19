@@ -4,10 +4,13 @@ import { Provider } from 'react-redux';
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import store from './store';
+import store, { sagaMiddleware } from './store';
+import rootSaga from './sagas';
 
 import './normalize.scss';
 import './index.scss';
+
+sagaMiddleware.run(rootSaga);
 
 ReactDOM.render(
     <React.StrictMode>
