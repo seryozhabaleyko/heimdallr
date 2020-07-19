@@ -2,7 +2,7 @@ import React from 'react';
 
 import styled from './post.module.scss';
 
-function Post({ title = 'Title here.' }) {
+function Post({ title }) {
     return (
         <article className={styled.post}>
             <header className={styled.heading}>
@@ -11,5 +11,9 @@ function Post({ title = 'Title here.' }) {
         </article>
     );
 }
+
+Post.defaultProps = {
+    title: 'Title here.',
+};
 
 export default Post;
